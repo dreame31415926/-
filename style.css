@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+#image-container {
+    height: 300px; /* 固定高度，防止图片加载时页面跳动 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border: 3px dashed #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#dog-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    display: none; /* 初始隐藏，等加载完成后显示 */
+    object-fit: contain; /* 确保图片完整显示 */
+}
+
+#loading-text {
+    font-style: italic;
+    color: #888;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #e65c50;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
